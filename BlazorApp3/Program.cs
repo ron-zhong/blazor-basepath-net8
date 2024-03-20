@@ -1,4 +1,3 @@
-using BlazorApp3.Client.Pages;
 using BlazorApp3.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -31,7 +30,7 @@ app.UseRouting();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
-    .AddInteractiveWebAssemblyRenderMode(options => options.PathPrefix = "/path-prefix")
+    .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(BlazorApp3.Client._Imports).Assembly);
 
 app.Run();
