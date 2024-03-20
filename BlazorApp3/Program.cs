@@ -25,9 +25,6 @@ else
 app.UseHttpsRedirection();
 
 app.UseStaticFiles("/path-prefix");
-app.UseAntiforgery();
-
-app.UseBlazorFrameworkFiles(new PathString("/path-prefix"));
 app.UsePathBase("/path-prefix");
 app.UseAntiforgery();
 app.UseRouting();
